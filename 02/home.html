@@ -1,0 +1,17 @@
+---
+name: home
+url: /
+controller: TasksController
+---
+
+<div class="grid-container">
+
+	<hr />
+  <form>
+  	<input ng-model="newTask.taskTitle" type="text" placeholder="Task Title">
+		<textarea ng-model="newTask.taskBody" placeholder="Task Description"></textarea>
+		<input ng-model="newTask.tags" type="text" placeholder="Tags (comma separated)">
+		<p><a class="button" ng-click="CreateTask( newTask.taskTitle, newTask.taskBody, newTask.tags ); newTask = ''">Add New Task</a></p>
+  </form>
+
+</div>

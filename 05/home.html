@@ -1,0 +1,38 @@
+---
+name: home
+url: /
+controller: TasksController
+---
+
+<div class="grid-container">
+
+	<hr />
+  <form>
+  	<input ng-model="newTask.taskTitle" type="text" placeholder="Task Title">
+		<textarea ng-model="newTask.taskBody" placeholder="Task Description"></textarea>
+		<input ng-model="newTask.tags" type="text" placeholder="Tags (comma separated)">
+		<p><a class="button" ng-click="CreateTask( newTask.taskTitle, newTask.taskBody, newTask.tags ); newTask = ''">Add New Task</a></p>
+  </form>
+
+</div>
+
+<div class="grid-container">
+	<p><strong>All Tags:</strong> <span ng-repeat="tag in allTags track by $index">{{tag}} | </span></p>
+</div>
+
+<div class="grid-block">
+	
+	<div class="grid-content large-3" ng-repeat="task in tasks track by $index">
+
+		<div class="card">
+			<div class="card-section">
+				<h4><strong>Title:</strong> {{task.title}}</h4>
+				<p><strong>Body:</strong> {{task.body}}</p>
+				<p><strong>Tags:</strong> <span ng-repeat="tag in task.tags track by $index">{{tag}} | </span></p>
+				<p><a class="button" ng-click="DeleteTask( task.id )">Delete Task</a></p>
+			</div>
+		</div>
+
+	</div>
+
+</div>
