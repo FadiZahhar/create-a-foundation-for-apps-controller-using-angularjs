@@ -2,7 +2,9 @@
 ## Instructor: [Kezz Bracey][instructor url]
 
 
-[COURSE DESCRIPTION]
+Foundation for Apps was created by Zurb to provide the same head start for web app design that their incredibly popular Foundation Framework already offers for web site design. Foundation for Apps is built on top of AngularJS, making that framework even easier to use with easy-to-configure routes and a command-line tool for scaffolding.
+
+In this course, Envato Tuts+ instructor Kezz Bracey will teach you how to create a task management app with Foundation for Apps. This course goes hand in hand with the design-focused [Up and Running With Foundation for Apps](https://webdesign.tutsplus.com/courses/up-and-running-with-foundation-for-apps) course, providing a step-by-step walkthrough on coding an AngularJS controller to bring the app to life. Let's get started!
 
 
 ## Source Files Description
